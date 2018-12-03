@@ -24,9 +24,13 @@ extension ImageGalleryView: UICollectionViewDataSource {
         if (indexPath as NSIndexPath).row == 0 && self.shouldTransform {
           cell.transform = CGAffineTransform(scaleX: 0, y: 0)
 
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: UIView.AnimationOptions(), animations: {
-            cell.transform = CGAffineTransform.identity
-            }) { _ in }
+            UIView.animate(withDuration: 0.5,
+                           delay: 0,
+                           usingSpringWithDamping: 1,
+                           initialSpringVelocity: 1,
+                           options: UIView.AnimationOptions(),
+                           animations: { cell.transform = CGAffineTransform.identity },
+                           completion: nil)
 
           self.shouldTransform = false
         }

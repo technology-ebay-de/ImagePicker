@@ -100,7 +100,7 @@ open class ImagePickerController: UIViewController {
     self.configuration = Configuration()
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
   }
-  
+
   public required init?(coder aDecoder: NSCoder) {
     self.configuration = Configuration()
     super.init(coder: aDecoder)
@@ -162,7 +162,7 @@ open class ImagePickerController: UIViewController {
     applyOrientationTransforms()
 
     UIAccessibility.post(notification: UIAccessibility.Notification.screenChanged,
-                         argument: bottomContainer);
+                         argument: bottomContainer)
   }
 
   open func resetAssets() {
@@ -190,7 +190,7 @@ open class ImagePickerController: UIViewController {
     let alertController = UIAlertController(title: configuration.requestPermissionTitle, message: configuration.requestPermissionMessage, preferredStyle: .alert)
 
     let alertAction = UIAlertAction(title: configuration.OKButtonTitle, style: .default) { _ in
-        if let settingsURL = URL(string:UIApplication.openSettingsURLString) {
+        if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
         UIApplication.shared.openURL(settingsURL)
       }
     }
@@ -234,7 +234,7 @@ open class ImagePickerController: UIViewController {
       selector: #selector(adjustButtonTitle(_:)),
       name: NSNotification.Name(rawValue: ImageStack.Notifications.imageDidDrop),
       object: nil)
-    
+
     NotificationCenter.default.addObserver(self,
                                            selector: #selector(dismissIfNeeded),
                                            name: NSNotification.Name(rawValue: ImageStack.Notifications.imageDidDrop),
@@ -252,7 +252,7 @@ open class ImagePickerController: UIViewController {
 
     NotificationCenter.default.addObserver(self,
       selector: #selector(handleRotation(_:)),
-      name: UIDevice.orientationDidChangeNotification,// NSNotification.NameUIDevice.orientationDidChangeNotificatione,
+      name: UIDevice.orientationDidChangeNotification, // NSNotification.NameUIDevice.orientationDidChangeNotificatione,
       object: nil)
   }
 
@@ -276,9 +276,9 @@ open class ImagePickerController: UIViewController {
     guard let sender = notification.object as? ImageStack else { return }
 
     let title = !sender.assets.isEmpty ? configuration.doneButtonTitle : configuration.cancelButtonTitle
-    bottomContainer.doneButton.setTitle(title, for:UIControl.State.normal) // Add state.normal,
+    bottomContainer.doneButton.setTitle(title, for: UIControl.State.normal) // Add state.normal,
   }
-  
+
   @objc func dismissIfNeeded() {
     // If only one image is requested and a push occures, automatically dismiss the ImagePicker
     if imageLimit == 1 {
