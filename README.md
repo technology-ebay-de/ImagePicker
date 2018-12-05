@@ -93,6 +93,7 @@ github "technology-ebay-de/ImagePicker"
 ## Author
 
 [Hyper](http://hyper.no) made this with ❤️
+
 [ebay tech Berlin](https://ebaytech.berlin) forked this after Hyper retired from maintainer status.
 
 ## Contribute
