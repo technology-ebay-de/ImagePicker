@@ -1,15 +1,17 @@
-![ImagePicker](https://github.com/hyperoslo/ImagePicker/blob/master/Resources/ImagePickerPresentation.png)
+![ImagePicker](https://github.com/technology-ebay-de/ImagePicker/blob/master/Resources/ImagePickerPresentation.png)
 
 [![Version](https://img.shields.io/cocoapods/v/ImagePicker.svg?style=flat)](http://cocoadocs.org/docsets/ImagePicker)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/ImagePicker.svg?style=flat)](http://cocoadocs.org/docsets/ImagePicker)
 [![Platform](https://img.shields.io/cocoapods/p/ImagePicker.svg?style=flat)](http://cocoadocs.org/docsets/ImagePicker)
-![Swift](https://img.shields.io/badge/%20in-swift%204.0-orange.svg)
-[![Join the chat at https://gitter.im/hyperoslo/ImagePicker](https://badges.gitter.im/hyperoslo/ImagePicker.svg)](https://gitter.im/hyperoslo/ImagePicker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+![Swift](https://img.shields.io/badge/%20in-swift%204.2-orange.svg)
+
+#### This fork is done by ebay tech Berlin. 
+We use it in our [mobile.de](https://www.mobile.de) [App](https://itunes.apple.com/de/app/mobile.de-mobile-autoborse/id378563358)
 
 ## Description
 
-<img src="https://github.com/hyperoslo/ImagePicker/blob/master/Resources/ImagePickerIcon.png" alt="ImagePicker Icon" align="right" />
+<img src="https://github.com/technology-ebay-de/ImagePicker/blob/master/Resources/ImagePickerIcon.png" alt="ImagePicker Icon" align="right" />
 
 **ImagePicker** is an all-in-one camera solution for your iOS app. It lets your users select images from the library and take pictures at the same time. As a developer you get notified of all the user interactions and get the beautiful UI for free, out of the box, it's just that simple.
 
@@ -74,28 +76,29 @@ let images = imageAssets
 
 ## Installation
 
-**ImagePicker** is available through [CocoaPods](http://cocoapods.org). To install
+**ImagePicker** is available through [CocoaPods](http://cocoapods.org). To install our fork of
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ImagePicker'
+pod 'ImagePicker', :git => 'https://github.com/technology-ebay-de/ImagePicker.git', :tag => '3.1.1'
 ```
 
 **ImagePicker** is also available through [Carthage](https://github.com/Carthage/Carthage).
 To install just write into your Cartfile:
 
 ```ruby
-github "hyperoslo/ImagePicker"
+github "technology-ebay-de/ImagePicker"
 ```
 
 ## Author
 
 [Hyper](http://hyper.no) made this with ❤️
+[ebay tech Berlin](https://ebaytech.berlin) forked this after Hyper retired from maintainer status.
 
 ## Contribute
 
-We would love you to contribute to **ImagePicker**, check the [CONTRIBUTING](https://github.com/hyperoslo/ImagePicker/blob/master/CONTRIBUTING.md) file for more info.
+We would love you to contribute to **ImagePicker**, check the [CONTRIBUTING](https://github.com/technology-ebay-de/ImagePicker/blob/master/CONTRIBUTING.md) file for more info.
 
 ## License
 
-**ImagePicker** is available under the MIT license. See the [LICENSE](https://github.com/hyperoslo/ImagePicker/blob/master/LICENSE.md) file for more info.
+**ImagePicker** is available under the MIT license. See the [LICENSE](https://github.com/technology-ebay-de/ImagePicker/blob/master/LICENSE.md) file for more info.
